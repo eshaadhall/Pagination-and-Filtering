@@ -13,7 +13,7 @@ function showPage(studentList1, pages){
 console.log(studentsToShow);
   for(let i=0; i<= studentList1.length+1; i++){
     if(i >= (studentsToShow-10) && i< studentsToShow){ // show students from this number for the page selected (for example : page #2 : show from index 10 to index 19)
-      if(studentList1[i] ==){
+      if(studentList1[i] !== ""){
         console.log(studentList1[i]);
           studentList1[i].style.display = ""; // this give an error when called from searchList(keyWord); function. Line134
          }
